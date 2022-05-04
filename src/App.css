@@ -1,0 +1,152 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+}
+h1, h2{
+  font-family: 'Dela Gothic One', cursive;
+  text-align: center;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+p, input, button{
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 1rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(231, 231, 230);
+}
+.upload-conatiner{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:90vh;
+}
+.warning{
+  border: 0.25rem solid rgb(207, 7, 7);
+}
+input[type=file]{
+  margin-left: 6rem;
+  font-size: 1.25rem;
+}
+button:hover{
+  background-color: rgb(198, 217, 233)
+}
+.upload-image{
+  height:90vh;
+  padding-bottom: 5vh;
+  align-self: center;
+  overflow: hidden;
+}
+.infobar, button{
+  background-color: rgb(169, 182, 209);
+  border-left: 1px solid rgb(198, 217, 233);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+  box-shadow: inset -1px -1px 2px rgb(124, 124, 124), inset 2px 2px 10px rgb(124, 124, 124);
+}
+.infobar-item, button{
+  cursor: pointer;
+  border: none;
+  height: 3.5rem;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 1rem 1.5rem;
+  margin: 0 0.5rem;
+  transition: background-color 500ms;
+  box-shadow: 2px 2px 5px rgb(129, 129, 129), inset 2px 2px 5px rgb(236, 236, 236), inset -2px -2px 5px rgb(172, 171, 171); 
+}
+.infobar-item:hover, .infobar-item:focus{
+  background-color: rgb(198, 217, 233);
+}
+.infobar-item.active{
+  transition: all 500ms ease;
+  background-color: rgb(133, 145, 172);
+  box-shadow: inset 5px 2px 7px rgb(109, 109, 109);
+  border: none;
+  color: white;
+}
+.slider-container{
+  padding: 2rem;
+  background-color: aliceblue;
+}
+.slider{
+  align-items: flex-end;
+}
+input[type=range]{
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]:focus{
+  outline:none;
+}
+input[type=range]::-ms-track{
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 3.5rem;
+  width: 2rem;
+  background-color: rgb(223, 223, 223);
+  border-radius: 15px;
+  margin-top: -1rem;
+  box-shadow: 5px 5px 10px rgb(129, 129, 129), inset -5px -2px 7px rgb(189, 189, 189);
+}
+input[type=range]::-moz-range-thumb{
+  height: 3.5rem;
+  width: 2rem;
+  background-color: rgb(223, 223, 223);
+  border-radius: 15px;
+  margin-top: -1rem;
+  box-shadow: 5px 5px 10px rgb(129, 129, 129), inset -5px -2px 7px rgb(189, 189, 189);
+  border: none;
+}
+input[type=range]::-ms-thumb{
+  height: 3.5rem;
+  width: 2rem;
+  background-color: rgb(223, 223, 223);
+  border-radius: 15px;
+  margin-top: -1rem;
+  box-shadow: 5px 5px 10px rgb(129, 129, 129), inset -5px -2px 7px rgb(189, 189, 189);
+}
+input[type=range]::-webkit-slider-runnable-track{
+  height: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgb(169, 182, 209);
+  box-shadow: inset 7px 3px 7px rgb(124, 124, 124);
+}
+input[type=range]::-moz-range-track{
+  height: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgb(169, 182, 209);
+  box-shadow: inset 5px 5px 10px rgb(124, 124, 124);
+}
+input[type=range]::-ms-track{
+  height: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgb(169, 182, 209);
+  box-shadow: inset 5px 5px 10px rgb(124, 124, 124);
+}
+
