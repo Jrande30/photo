@@ -1,5 +1,5 @@
 import React from 'react';
-import domtoimage from 'dom-to-image';
+import domtoimage from 'dom-to-image-more';
 
 function downloadAsJpeg(){
     let node = document.getElementById('upload-image');
